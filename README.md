@@ -18,9 +18,9 @@ The Script gets applied to the responses Sheet, not the Form itself. Here's how:
 
 4. Create a trigger by clicking the clock icon ![project trigger](https://github.com/kmcroft13/submit-googleforms-to-trello/blob/master/project-trigger.png) (you may have to give your project a name and save it first). A new tab will open, click the "New Trigger" button in the bottom right. Trigger should be setup as below:
 
-| Which Function           | Which deployment   | Event source       | Event type      |
-| ------------------------ |:------------------:|: -----------------:| ---------------:|
-| onFormSubmit (default)   | Head (default)     | From spreadsheet   | On form submit  |
+| Which Function | Which deployment | Event source | Event type |
+| ----------------------- |------------------ | ----------------- | --------------- |
+| onFormSubmit (default) | Head (default) | From spreadsheet | On form submit |
 
 Choose whatever you want for "Failure notification settings" and click Save. You may need to go through an authentication flow to authorize Google Apps Scripts to access the Sheets data. This is expected.
 
