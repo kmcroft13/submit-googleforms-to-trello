@@ -18,6 +18,7 @@ function createTrelloCard(range) {
   var TrelloList = "<LIST_ID>";
 
   //ObjectIDs for Trello labels in JS variables
+  var labels = [];
   var label1 = '<LABEL_ID>';
   //ADD ADDITIONAL LABELS HERE IF NECESSARY
 //END
@@ -45,22 +46,25 @@ function createTrelloCard(range) {
   cardDesc = cardDesc + footer;
 
 //Build labels depending on data from the form. This will be sent in payload (below)
-  var labels = label1; //Other Label ObjectIDs from Trello can be added with config variables above
+   labels.push(label1); //Other Label ObjectIDs from Trello can be added with config variables above by adding additional lines like label.push(<label_variable>);
    //ADD ADDITIONAL LOGIC HERE IF NECESSARY
 
 
 //*****************************************************
 //****** DO NOT CHANGE ANYTHING BELOW THIS LINE *******
 //*****************************************************
+//Make comma separated list from labels
+  labels.join(",");
+
 //Send POST payload data via Trello API
 //POST [/1/cards], Required permissions: write
-    var payload = {"name":cardName,
+  var payload = {"name":cardName,
                   "desc":cardDesc,
                   "pos":"bottom",
                   "due": "", //(required) A date, or null
                   "idList":TrelloList, //(required) id of the list that the card should be added to
                   "idLabels":labels,
-                 };
+                };
 
    //Because payload is a JavaScript object, it will be interpreted as an HTML form
    var url = "https://api.trello.com/1/cards?key=" + TrelloKey + "&token=" + TrelloToken + "";
