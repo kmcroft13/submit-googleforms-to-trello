@@ -16,7 +16,7 @@ The Script gets applied to the responses Sheet, not the Form itself. Here's how:
 
 3. Edit the script to input the needed Config Variables at the top, add columns from the responses Sheet, and add any additional form logic as needed. [See below](https://github.com/kmcroft13/submit-googleforms-to-trello/blob/master/README.md#how-do-i-get-keys-tokens-and-objectids-from-trello) for more info about how to collect some of this information, including Keys and ObjectIDs, from Trello.
 
-4. Create a trigger by clicking the clock icon ![project trigger](https://github.com/kmcroft13/submit-googleforms-to-trello/blob/master/project-trigger.png) (you may have to give your project a name and save it first). A new tab will open, click the "New Trigger" button in the bottom right. Trigger should be setup as below:
+4. Create a trigger by clicking the clock icon ![project trigger](https://github.com/kmcroft13/submit-googleforms-to-trello/blob/master/project_trigger.png?raw=true) (you may have to give your project a name and save it first). A new tab will open, click the "New Trigger" button in the bottom right. Trigger should be setup as below:
 
 | Which Function | Which deployment | Event source | Event type |
 | ----------------------- |------------------ | ----------------- | --------------- |
