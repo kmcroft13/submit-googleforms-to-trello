@@ -3,7 +3,7 @@
 
 
 ## Prepare your Google Form ##
-Create the Google Form you want to accept responses from, including all of the fields. There must be a Google Sheets file associated with the Form, which does not happen automatically. To do this, go to the Repsonses tab of your Form and click the green Sheets icon to "View responses in Sheets". You will be asked to create a new Sheet to track responses or associate the Form with an existing Sheet; either option will work.
+Create the Google Form you want to accept responses from, including all of the fields. There must be a Google Sheets file associated with the Form, which does not happen automatically. To do this, go to the Repsonses tab of your Form and click the green Sheets icon to "Link to Sheet" (or "View in Sheets" if you already have a linked file). If a linked Sheet does not yet exist, you will be asked to create a new Sheet to track responses or associate the Form with an existing Sheet; either option will work.
 
 The steps below will be done from inside **the linked Sheet file**, NOT from the Form itself.
 
@@ -26,7 +26,7 @@ Choose whatever you want for "Failure notification settings" and click Save.
 
 You may need to go through an authentication flow to authorize Google Apps Scripts to access the Sheets data. You may also get a warning that says "Google hasn't verified this app". **This is expected.** You can safely open the Advanced menu and continue, and then click Allow. You ARE the developer of this code (congrats!) so you know it's safe. If you did it correctly you should see a message that says "Has been successfully authorized to access your data" and then you can close the pop-up.
 
-That's it! Keep in mind that running tests within the Script Editor won't work because we need the form submission trigger to activate the script. Confirm things are working correctly by submitting a real for response!
+That's it! Keep in mind that running tests within the Script Editor won't work because we need the form submission trigger to activate the script. Confirm things are working correctly by submitting a real for response! You don't need to "Deploy" the code using the button at the top. As long as you've saved the code file and created the trigger this should begin functioning right away without deployment.
 
 ### How do I get Keys, Tokens, and ObjectIDs from Trello? ###
 #### Generating a Key ####
